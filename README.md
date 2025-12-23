@@ -2,8 +2,8 @@
 
 Modern, responsive (duyarlı) ve kullanıcı dostu bir görsel arama uygulaması. **React** ve **Vite** kullanılarak geliştirilmiş olup, **Unsplash API** üzerinden yüksek kaliteli görselleri listeler.
 
-![Proje Önizlemesi](https://via.placeholder.com/1200x600?text=Proje+Ekran+Goruntusu+Buraya)
-*(Buraya projenin çalışan halinin bir ekran görüntüsünü veya GIF'ini koyabilirsin)*
+| <img width="1917" height="990" alt="car" src="https://github.com/user-attachments/assets/a476284a-d615-452c-80bb-df4ba29fa47c" />
+|<img width="1917" height="987" alt="modal" src="https://github.com/user-attachments/assets/7f1c88d6-3743-4545-9190-9788a6163b14" />
 
 ## 🚀 Özellikler
 
@@ -67,9 +67,6 @@ npm run dev
 ```
 5.Tarayıcıda Açın: Terminalde verilen yerel sunucu adresine `(genellikle http://localhost:5173)` gidin.
 
-## 📸 Ekran Görüntüleri
-| <img width="1917" height="990" alt="car" src="https://github.com/user-attachments/assets/a476284a-d615-452c-80bb-df4ba29fa47c" />
-|<img width="1917" height="987" alt="modal" src="https://github.com/user-attachments/assets/7f1c88d6-3743-4545-9190-9788a6163b14" />
 
 ## 🤝 Katkıda Bulunma
 

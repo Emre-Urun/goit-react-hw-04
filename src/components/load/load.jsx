@@ -1,5 +1,5 @@
 import { PropagateLoader } from "react-spinners";
-import css from "./Loader.module.css";
+import css from "./load.module.css";
 
 function Loader() {
   return (

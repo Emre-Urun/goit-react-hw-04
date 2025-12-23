@@ -6,7 +6,7 @@ import ErrorMsj from "./components/ErrorMessage/errorMessage.jsx";
 import ImageGallery from "./components/ImageGallery/imageGallery.jsx";
 import LoadMoreBtn from "./components/LoadMoreBtn/loadMoreBtn.jsx";
 import ImageModal from "./components/ImageModal/imageModal.jsx";
-import Loader from "./components/loader/loader.jsx";
+import Loader from "./components/load/load.jsx";
 
 function App() {
   const [images, setImages] = useState([]);

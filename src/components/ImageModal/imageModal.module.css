@@ -1,0 +1,118 @@
+/* --- YÜKLENME DURUMU --- */
+.loadingState {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+}
+
+/* --- KART TASARIMI --- */
+.modalContent {
+  background-color: #fff;
+  border-radius: 16px; /* Daha yumuşak köşeler */
+  overflow: hidden;
+  width: 90vw;
+  max-width: 800px; /* Çok geniş ekranlarda devasa olmasın */
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); /* Derin gölge */
+
+  /* Animasyon: Aşağıdan yukarıya yumuşak çıkış */
+  animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* --- RESİM ALANI --- */
+.imageWrapper {
+  background-color: #000; /* Resim yüklenirken veya kenarlarda siyah kalsın */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* Resim dikeyde çok yer kaplarsa scroll olmasın, sığdırılsın */
+  flex: 1;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  max-height: 65vh; /* Ekranın %65'i resim olsun */
+  object-fit: contain; /* Resmi kesme, sığdır */
+  background-color: #f8f9fa; /* Hafif gri zemin */
+}
+
+/* --- BİLGİ ALANI --- */
+.info {
+  padding: 20px 24px;
+  background-color: #fff;
+  border-top: 1px solid #f1f5f9;
+}
+
+/* Yazar Profili Satırı */
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.userAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Yuvarlak avatar */
+  object-fit: cover;
+  border: 2px solid #e2e8f0;
+}
+
+.userName {
+  font-weight: 700;
+  font-size: 16px;
+  color: #1e293b;
+  margin: 0;
+}
+
+.userLocation {
+  font-size: 13px;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Beğeni Rozeti */
+.likesBadge {
+  background-color: #fecaca; /* Hafif kırmızı zemin */
+  color: #991b1b; /* Koyu kırmızı yazı */
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Açıklama Metni */
+.description {
+  color: #334155;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 0;
+  /* 3 satırdan sonrasını kes */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

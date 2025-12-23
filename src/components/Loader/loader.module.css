@@ -1,0 +1,7 @@
+.loaderWrapper {
+  display: flex;
+  justify-content: center; /* Yatayda ortala */
+  align-items: center; /* Dikeyde ortala */
+  padding: 40px 0; /* Üstten ve alttan biraz boşluk bırak */
+  width: 100%; /* Tüm genişliği kapla */
+}

@@ -1,0 +1,69 @@
+/* Mavi Arka Plan (Header) */
+.header {
+  position: fixed; /* Sayfa kaydırılsa bile üstte sabit kalsın */
+  top: 0;
+  left: 0;
+  width: 100%; /* Uçtan uca kapla */
+  height: 72px; /* Yükseklik */
+  z-index: 1100; /* Diğer her şeyin üstünde olsun */
+
+  display: flex;
+  justify-content: center; /* İçeriği yatayda ortala */
+  align-items: center; /* İçeriği dikeyde ortala */
+
+  background-color: #3f51b5; /* İstediğin Mavi Renk */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Hafif gölge */
+}
+
+/* Form Kutusu (Beyaz Kapsül) */
+.form {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  max-width: 600px; /* Çok geniş ekranlarda devasa olmasın */
+  height: 40px;
+
+  background-color: #ffffff; /* Beyaz zemin */
+  border-radius: 4px; /* Hafif yuvarlak köşeler */
+  overflow: hidden; /* Taşan kısımları gizle */
+  margin: 0 20px; /* Mobilde kenarlardan boşluk kalsın */
+}
+
+/* Input Alanı */
+.input {
+  flex-grow: 1; /* Kalan tüm boşluğu kapla */
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 16px;
+  font-size: 16px;
+  color: #333;
+}
+
+.input::placeholder {
+  color: #aaa;
+}
+
+/* Arama Butonu */
+.btn {
+  width: 48px;
+  height: 100%;
+  border: none;
+  background-color: #fff; /* Buton da beyaz olsun */
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+
+  /* Büyüteç İkonu (SVG veya görsel) */
+  background-image: url("https://img.icons8.com/ios-glyphs/30/000000/search--v1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+
+.btn:hover {
+  opacity: 1;
+  background-color: #f0f0f0; /* Üzerine gelince hafif grileşsin */
+}
